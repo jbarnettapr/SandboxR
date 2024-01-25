@@ -1,6 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-    "ghcr.io/rocker-org/devcontainer/tidyverse:4.2": {}
+    "ghcr.io/rocker-org/devcontainer-features/r-apt:latest": {}
   }
 }
