@@ -1,0 +1,16 @@
+name: Tests
+
+on: push
+
+jobs:
+    tests:
+        runs-on: windows-latest
+
+        strategy:
+            matrix:
+                r-version: ["3.6", 4.2"]
+        
+        steps:
+            - uses: actions/checkout@v2
+            - name: unit tests
+              run: Rscript test/unitTests.R
