@@ -12,5 +12,9 @@ jobs:
         
         steps:
             - uses: actions/checkout@v2
-            - name: unit tests
+            - uses: r-lib/actions/setup-r-dependencies@v2
+              with:
+                extra-packages: testthat
+            
+            - name: run unit tests
               run: Rscript test/unitTests.R
