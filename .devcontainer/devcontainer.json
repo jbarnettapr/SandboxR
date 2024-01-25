@@ -3,11 +3,15 @@
   "features": {
     "ghcr.io/rocker-org/devcontainer-features/r-apt:latest": {}
   },
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "r.rterm.linux": "/usr/local/bin/radian",
-    "r.bracketedPaste": true,
-    "workbench.colorTheme": "Night Owl"
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "r.rterm.linux": "/usr/local/bin/radian",
+        "r.bracketedPaste": true,
+        "workbench.colorTheme": "Default Dark Modern"
+      }
+    }
   },
   "forwardPorts": [8787],
 	"portsAttributes": {
